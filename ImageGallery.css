@@ -1,0 +1,52 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#background{
+    height: 100%;
+    width: 100%;
+    background-color: #f3f3f3;
+}
+#centre{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    height: 70%;
+/*   background-color: indianred;*/
+}
+#centre img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 320px;
+    border-radius: 8px;
+    transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19)0.3s;
+    
+}
+#centre img:hover{
+    transform: translate(-50%,-50%) scale(1.2);
+    z-index: 999;
+    cursor: pointer;
+}
+#centre #one{
+    left: 40%;
+    top: 42%;
+}
+#centre #two{
+    top: 56%;
+    z-index: 99;
+}
+#centre #three{
+    left: 65%;
+    top: 49%;
+}
